@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_nav"
+
+        android:layout_width="411dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/image_all"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="@color/dark_purple" />
+        />
+
+        <ImageView
+            android:id="@+id/image_face"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_baseline_tag_faces_24"
+            app:tint="@color/dark_purple" />
+
+        <ImageView
+            android:id="@+id/image_sunny"
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_weight="1"
+            android:layout_gravity="center"
+
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            app:tint="@color/dark_purple" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_hello"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/linear_nav"
+        android:layout_centerHorizontal="true"
+
+        android:layout_margin="32dp"
+        android:textSize="28sp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_phrases"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:gravity="center"
+
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        />
+    <View
+        android:layout_width="128dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@id/text_phrases"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/purple"
+        />
+
+    <Button
+        android:id="@+id/button_new_phrase"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+
+        android:backgroundTint="@color/purple"
+        android:text="@string/new_phrase"
+        android:textSize="10sp" />
+
+</RelativeLayout>
